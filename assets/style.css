@@ -1,0 +1,116 @@
+:root {
+  --primary-color: rgb(46, 43, 43);
+  --secondary-color: rgb(40, 112, 58);
+  --tertiary-color: rgb(47, 48, 47);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--primary-color);
+}
+/* HEADER */
+.header {
+  background-color: var(--secondary-color);
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 10px 0;
+  border: 20px solid rgb(40, 105, 58);
+}
+.header h1 {
+  margin: 0 auto 0 auto;
+  padding: 0 70px 0 70px;
+  border: 10px solid var(--primary-color);
+  border-radius: 15px;
+}
+.header h1 a {
+  font-size: 80px;
+  text-decoration: none;
+  color: var(--tertiary-color);
+  font-weight: bold;
+}
+.header nav {
+  width: 45%;
+  margin: auto 0 auto 0;
+  margin-left: 30px;
+}
+.header ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+.header li {
+  margin-right: 50px;
+}
+.header nav a {
+  font-size: 27px;
+  text-decoration: none;
+  color: var(--tertiary-color);
+  font-weight: bold;
+}
+.header h1 a:hover {
+  font-size: 83px;
+}
+.header nav a:hover {
+  font-size: 33px;
+  background-color: rgb(40, 105, 58);
+  border: 10px solid rgb(40, 105, 58);
+  border-radius: 15px;
+}
+/* MAIN */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* ABOUT */
+.about {
+  flex-basis: 25%;
+  background-color: var(--secondary-color);
+  border: 20px solid rgb(40, 105, 58);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.about h2 {
+  margin-top: 30px;
+  font-size: 50px;
+  color: var(--primary-color);
+  border-bottom: 7px solid var(--primary-color);
+}
+.about img {
+  display: block;
+  width: 80%;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: 5px solid var(--primary-color);
+}
+.about-info {
+  margin-top: 30px;
+  width: 80%;
+}
+
+/* PROJECTS */
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-basis: 69%;
+  background-color: var(--secondary-color);
+  border: 20px solid rgb(40, 105, 58);
+}
+.projects h2 {
+  margin-top: 30px;
+  font-size: 50px;
+  color: var(--primary-color);
+  border-bottom: 7px solid var(--primary-color);
+}
