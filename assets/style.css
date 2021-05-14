@@ -1,6 +1,7 @@
 :root {
-  --primary-color: rgb(46, 43, 43);
-  --secondary-color: rgb(40, 112, 58);
+  --primary-color: rgba(40, 112, 58, 0.733);
+  --primary-border: rgb(40, 105, 58);
+  --secondary-color: rgb(46, 43, 43);
   --tertiary-color: rgb(47, 48, 47);
 }
 * {
@@ -9,21 +10,21 @@
   padding: 0;
 }
 body {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 /* HEADER */
 .header {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   font-family: "Courier New", Courier, monospace;
   display: flex;
   justify-content: space-between;
   padding: 10px 0 10px 0;
-  border: 20px solid rgb(40, 105, 58);
+  border: 20px solid var(--primary-border);
 }
 .header h1 {
   margin: 0 auto 0 auto;
   padding: 0 70px 0 70px;
-  border: 10px solid var(--primary-color);
+  border: 10px solid var(--secondary-color);
   border-radius: 15px;
 }
 .header h1 a {
@@ -38,18 +39,19 @@ body {
   margin-left: 30px;
 }
 .header ul {
-  width: 100%;
+  width: 80%;
   display: flex;
+  margin-left: 30px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   list-style-type: none;
 }
 .header li {
-  margin-right: 50px;
+  margin-right: 70px;
 }
 .header nav a {
-  font-size: 27px;
+  font-size: 40px;
   text-decoration: none;
   color: var(--tertiary-color);
   font-weight: bold;
@@ -58,9 +60,9 @@ body {
   font-size: 83px;
 }
 .header nav a:hover {
-  font-size: 33px;
-  background-color: rgb(40, 105, 58);
-  border: 10px solid rgb(40, 105, 58);
+  font-size: 45px;
+  background-color: var(--primary-color);
+  border: 10px solid var(--primary-border);
   border-radius: 15px;
 }
 /* MAIN */
@@ -75,8 +77,8 @@ body {
 /* ABOUT */
 .about {
   flex-basis: 25%;
-  background-color: var(--secondary-color);
-  border: 20px solid rgb(40, 105, 58);
+  background-color: var(--primary-color);
+  border: 20px solid var(--primary-border);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,32 +87,100 @@ body {
 .about h2 {
   margin-top: 30px;
   font-size: 50px;
-  color: var(--primary-color);
-  border-bottom: 7px solid var(--primary-color);
+  color: var(--secondary-color);
+  border-bottom: 5px solid var(--secondary-color);
 }
 .about img {
   display: block;
   width: 80%;
   margin-top: 30px;
   padding-bottom: 20px;
-  border-bottom: 5px solid var(--primary-color);
+  border-bottom: 5px solid var(--secondary-color);
 }
 .about-info {
   margin-top: 30px;
+  margin-bottom: 30px;
   width: 80%;
 }
 
 /* PROJECTS */
+#projects {
+  flex-basis: 69%;
+  font-family: "Courier New", Courier, monospace;
+  background-color: var(--primary-color);
+  border: 20px solid var(--primary-border);
+}
+#projects h2 {
+  width: 30%;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  font-size: 50px;
+  color: var(--secondary-color);
+  border-bottom: 5px solid var(--secondary-color);
+}
 .projects {
   display: flex;
   justify-content: center;
-  flex-basis: 69%;
-  background-color: var(--secondary-color);
-  border: 20px solid rgb(40, 105, 58);
 }
-.projects h2 {
-  margin-top: 30px;
-  font-size: 50px;
-  color: var(--primary-color);
-  border-bottom: 7px solid var(--primary-color);
+
+.footer {
+  background-color: var(--primary-color);
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 10px 0;
+  border: 20px solid var(--primary-border);
+  margin-top: 100px;
+}
+.footer h1 {
+  flex: 0.7;
+  font-size: 60px;
+  margin: 0 auto 0 auto;
+  padding: 0 70px 0 70px;
+  border-radius: 15px;
+}
+.footer p {
+  width: 70%;
+}
+.mailing {
+  flex: 1;
+}
+.mailing p:nth-child(1) {
+  border-bottom: 1px solid var(--secondary-color);
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.mailing p:nth-child(2) {
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.email {
+  flex: 1;
+}
+.email p:nth-child(1) {
+  border-bottom: 1px solid var(--secondary-color);
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.email p:nth-child(2) {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.links {
+  flex: 1;
+}
+.links p:nth-child(1) {
+  border-bottom: 1px solid var(--secondary-color);
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.links p:nth-child(2) {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
 }
