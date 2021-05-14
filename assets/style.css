@@ -94,8 +94,7 @@ body {
   display: block;
   width: 80%;
   margin-top: 30px;
-  padding-bottom: 20px;
-  border-bottom: 5px solid var(--secondary-color);
+  border: 15px solid var(--secondary-color);
 }
 .about-info {
   margin-top: 30px;
@@ -114,13 +113,40 @@ body {
   width: 30%;
   margin: 30px auto 0 auto;
   text-align: center;
-  font-size: 50px;
+  font-size: 70px;
   color: var(--secondary-color);
   border-bottom: 5px solid var(--secondary-color);
 }
-.projects {
+.projects-all {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  color: var(--secondary-color);
+}
+.projects-all h3 {
+  font-size: 50px;
+  border-bottom: 3px solid var(--secondary-color);
+}
+.projects-all .first-row {
+  text-align: center;
+  width: 30%;
+  margin: 20px auto 0 auto;
+}
+.projects-all .second-row {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.projects-all .third-row {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.projects-all .second-row article {
+  flex: 1;
+  text-align: center;
+}
+.projects-all .third-row article {
+  flex: 1;
+  text-align: center;
 }
 
 .footer {
@@ -131,37 +157,43 @@ body {
   padding: 10px 0 10px 0;
   border: 20px solid var(--primary-border);
   margin-top: 100px;
+  color: var(--secondary-color);
 }
 .footer h1 {
   flex: 0.7;
-  font-size: 60px;
-  margin: 0 auto 0 auto;
-  padding: 0 70px 0 70px;
-  border-radius: 15px;
+  height: 100%;
+  font-size: 70px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-right: 90px;
+  margin-left: 20px;
+  border-bottom: 5px solid var(--secondary-color);
 }
 .footer p {
-  width: 70%;
+  width: 80%;
 }
 .mailing {
   flex: 1;
 }
 .mailing p:nth-child(1) {
-  border-bottom: 1px solid var(--secondary-color);
-  font-size: 20px;
+  border-bottom: 3px solid var(--secondary-color);
+  font-size: 35px;
   text-align: center;
   font-weight: bold;
 }
 .mailing p:nth-child(2) {
   text-align: center;
-  margin-top: 5px;
+  margin-top: 10px;
   font-weight: bold;
+  font-size: 20px;
 }
 .email {
   flex: 1;
 }
 .email p:nth-child(1) {
-  border-bottom: 1px solid var(--secondary-color);
-  font-size: 20px;
+  border-bottom: 3px solid var(--secondary-color);
+  font-size: 35px;
   text-align: center;
   font-weight: bold;
 }
@@ -169,13 +201,14 @@ body {
   text-align: center;
   margin-top: 15px;
   font-weight: bold;
+  font-size: 22px;
 }
 .links {
   flex: 1;
 }
 .links p:nth-child(1) {
-  border-bottom: 1px solid var(--secondary-color);
-  font-size: 20px;
+  border-bottom: 3px solid var(--secondary-color);
+  font-size: 35px;
   text-align: center;
   font-weight: bold;
 }
@@ -183,4 +216,8 @@ body {
   text-align: center;
   margin-top: 10px;
   font-weight: bold;
+}
+.links a {
+  color: var(--secondary-color);
+  font-size: 22px;
 }
