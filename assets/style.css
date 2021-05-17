@@ -126,7 +126,7 @@ body {
 }
 .projects-all {
   display: flex;
-  min-width: 700px;
+  width: 100%;
   flex-direction: column;
   height: 90%;
   color: var(--secondary-color);
@@ -275,10 +275,10 @@ body {
     font-size: 40px;
   }
   .header h1 a:hover {
-    font-size: 55px;
+    font-size: 70px;
   }
   .header nav a:hover {
-    font-size: 22px;
+    font-size: 35px;
     background-color: rgba(0, 128, 0, 0);
     border: 10px solid rgba(0, 128, 0, 0);
   }
@@ -291,8 +291,8 @@ body {
     margin-right: 50px;
   }
   .about {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
     flex-basis: 25%;
     background-color: var(--primary-color);
     border: 20px solid var(--primary-border);
@@ -301,6 +301,26 @@ body {
     align-items: center;
     font-family: "Courier New", Courier, monospace;
     margin-bottom: 200px;
+  }
+  #projects h2{
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+
+    font-size: 35px;
+  }
+  .projects-all h3{
+    font-size: 35px;
+  }
+  .projects-all article{
+    margin-top: 50px;
+    width: 100%;
+  }
+  .projects-all .second-row {
+    flex-direction: column;
+  }
+  .projects-all .third-row {
+    flex-direction: column;
   }
   .footer {
     margin-left: 30px;
@@ -314,9 +334,6 @@ body {
     font-size: 50px;
     margin:0;
     margin-bottom: 50px;
-  }
-  .footer p{
-
   }
   .footer section{
     margin-bottom: 50px;
@@ -351,46 +368,3 @@ body {
     font-size: 20px;
   }
 }
-
-@media screen and (max-width: 768px) {
-  .header h1 {
-    width: 100%;
-    margin: 0 auto 0 auto;
-    padding: 0 30px 0 30px;
-    border: 7px solid var(--secondary-color);
-    border-radius: 15px;
-  }
-  .header h1 a {
-    font-size: 60px;
-    text-decoration: none;
-    color: var(--tertiary-color);
-    font-weight: bold;
-  }
-  .header nav a {
-    font-size: 30px;
-    text-decoration: none;
-    color: var(--tertiary-color);
-    font-weight: bold;
-  }
-}
-@media screen and (max-width: 575px) {
-  .header h1 {
-    margin: 0 auto 0 auto;
-    padding: 0 20px 0 20px;
-    border: 7px solid var(--secondary-color);
-    border-radius: 15px;
-  }
-  .header h1 a {
-    font-size: 50px;
-    text-decoration: none;
-    color: var(--tertiary-color);
-    font-weight: bold;
-  }
-  .header nav a {
-    font-size: 20px;
-    text-decoration: none;
-    color: var(--tertiary-color);
-    font-weight: bold;
-  }
-  }
-   
