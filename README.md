@@ -11,6 +11,10 @@ challenge2-portfolio, demonstrating advanced CSS
 - Working links to projects
 - Responsive layout
 
+## ScreenShot
+
+<img src="./assets/images/website.png" />
+
 ### Link:
 
 https://troygrossi.github.io/challenge2-portfolio/
